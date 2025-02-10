@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./form.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="close_item">&times;</div>
+        <div class="buttons"> <button class="head_form">Login</button>
+            <span class="diverse">|</span>
+            <button class="head_form" style="color: #46A358">Register</button>
+        </div>
+    <form class="form">
+        <p class="form_descr">Enter your email and password to register.</p>
+        <label class="label" for="name">Username</label>
+        <input class="inputt" type="text" id="name" placeholder="Username" required>
+        <label class="label" for="email">Enter your email address</label>
+        <input class="inputt" type="email" id="email" placeholder="Enter your email address" required>
+        <label class="label" for="password">Password</label>
+        <input class="inputt" type="password" id="password" placeholder="Password" minlength="8" required>
+        <label class="label" for="confirm_password">Confirm Password</label>
+        <input class="inputt" type="password" id="confirm_password" placeholder="Confirm password">
+        <button class="button_form" type="submit">Register</button>
+        <span class="form_end">Or register with</span>
+        <button class="btn-social"> <img class="logo1" alt="Google logo" src="./google%201.svg">Continue with Google</button>
+        <button class="btn-social"> <img class="logo2" alt="Facebook logo" src="./facebook%201.svg">Continue with Facebook</button>
+    </form>
+    <footer class="box"></footer>
+</div>
+
+</body>
+</html>
