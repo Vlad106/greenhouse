@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="close_item">&times;</div>
+        <button class="close_item">&times;</button>
         <div class="buttons"> <button class="head_form">Login</button>
             <span class="diverse">|</span>
             <button class="head_form" style="color: #46A358">Register</button>
@@ -32,6 +32,21 @@
     </form>
     <footer class="box"></footer>
 </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const closeButton = document.querySelector(".close_item");
+            const formContainer = document.querySelector(".container");
+
+            closeButton.addEventListener("click", function() {
+                formContainer.classList.add("hide");
+                setTimeout(() => {
+                    window.location.href = "./index.html";
+                }, 500);
+            });
+        });
+    </script>
+
+
 
 </body>
 </html>

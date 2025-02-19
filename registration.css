@@ -18,6 +18,12 @@ body{
     display: flex;
     flex-direction: column;
     background-color: #FFFFFF;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.hide {
+    opacity: 0;
+    transform: scale(0.9);
+    pointer-events: none;
 }
 .close_item{
     display: flex;
