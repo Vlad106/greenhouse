@@ -25,6 +25,7 @@ body{
     transform: scale(0.9);
     pointer-events: none;
 }
+
 .close_item{
     display: flex;
     justify-content: end;
@@ -160,3 +161,8 @@ footer{
     align-self: center;
     padding-right: 4px;
 }
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }}
