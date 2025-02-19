@@ -124,6 +124,7 @@
     border-radius: 6px;
     background: #46A358;
     padding: 10px 26px 10px 27px;
+    cursor: pointer;
 }
 .go-to-shop{
     font-family: 'Cera Pro', sans-serif;
