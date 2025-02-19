@@ -38,7 +38,7 @@
 .btn-register{
     display: flex;
     background: #46A358;
-    border-radius: 6px; solid: none;
+    border-radius: 6px;
     width: 100px;
     height: 35px;
     justify-content: center;
