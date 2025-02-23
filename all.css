@@ -144,7 +144,7 @@
 .content-img{
     display: flex;
     flex-wrap: wrap;
-    gap: 70px 33px;
+    gap: 70px 30px;
     margin-top: 30px;
 }
 .container-content{
@@ -185,7 +185,8 @@
     cursor: pointer;
 }
 .banner{
-    width: 310px;
+    max-width: 310px;
+    object-fit: cover;
     height: 470px;
 }
 .categories-name{
@@ -258,6 +259,8 @@
     background-color: #FBFBFB;
     border: 1px;
     border-radius: 10px;
+    width: 250px;
+    height: 250px;
 }
 .item-card:hover,
 .item-card.active{
@@ -269,6 +272,8 @@
 .item-card{
     border: 1px solid #E5E5E5;
     border-radius: 10px;
+    width: 258px;
+    height: 350px;
 }
 .pagination{
     display: flex;
