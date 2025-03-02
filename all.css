@@ -285,7 +285,6 @@
 }
 .item-card:hover,
 .item-card:active{
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
         cursor: pointer;
         transition: all 0.3s ease;
         border-top-color: #46A358;
@@ -300,7 +299,7 @@
         padding: 7.5px;
         border-radius: 4px;
         background: #FFFFFF;}
-    gap: 26px;
+    gap: 10px;
     position: absolute;
     bottom: 57px;
     left: 63px;
