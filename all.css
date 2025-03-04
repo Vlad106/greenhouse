@@ -1,7 +1,7 @@
-*{
+/*{
     box-sizing: border-box;
     text-decoration: none;
-}
+}*/
 .header{
     max-width: 1200px;
     width: 100%;
@@ -17,87 +17,12 @@
     justify-content: space-between;
     position: relative;
 }
-.name-list:hover >ul{
-    display: block;
-}
-.sub-menu{
-    width: 188px;
-    height: 143px;
-    background-color: #EDF6EE ;
-    >li:hover >a{
-        color: #FFFFFF;
-        font-family: 'Encode Sans Expanded', sans-serif;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 20px;
-        background-color: #1A712A;
-        transition: all 0.3s ease-in-out;
-        svg{
-            transform: rotate(180deg);
-            transition: all .3s ease-in-out;
-            stroke: #FFFFFF;
-        }
-    }
-    li >a svg{
-        transform: rotate(0deg);
-        transition: all .3s ease-in-out;
-    }
-    >li:hover >ul{
-        display: block;
-        >li:hover >a{
-            color: #FFFFFF;
-            font-family: 'Encode Sans Expanded', sans-serif;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 20px;
-            background-color: #1A712A;
-            transition: all 0.3s ease-in-out;
-        }
-    }
-}
-.sub-sub-menu {
-    width: 178px;
-    height: 215px;
-    background-color: #EDF6EE;
-    top: 0;
-    left: 100%;
-    position: absolute;
-    display: none;
-    padding-top: 12px;
-}
-.sub-menu{
-    position: absolute;
-    display: none;
-    top: 100%;
-    left: 15%;
-    padding-top: 12px;
-    >li{
-        list-style: none;
-    }
-    a{
-        display: flex;
-        gap: 82px;
-        align-items: center;
-        padding: 8px 14px;
-        text-decoration: none;
-        background: #EDF6EE;
-        font-family: 'Encode Sans Expanded', sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
-        color: #3D3D3D;
-        width: 100%;
-    }
-}
-.navigation >ul >li:hover >ul{
-    display: block;
-}
 .menu{
     >li{
         border-bottom: 3px solid transparent;
         /*padding-bottom: 25px;*/
 
-        &:hover {
+        &:hover{
             border-color: #46A358;
             transition: all 0.3s ease-in-out;
         }
@@ -120,7 +45,7 @@
 .name-list:hover,
 .name-list:active{
     font-family: 'Cera Pro', sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
     line-height: 20px;
 }
@@ -356,6 +281,7 @@
     border: 1px;
     width: 258px;
     height: 300px;
+    border-radius: 10px;
 }
 .item-card:hover,
 .item-card:active{
@@ -399,7 +325,7 @@
     margin-top: 12px;
 }
 .item-card{
-    border-top: 1px solid transparent;
+    border: 1px solid #E5E5E5;
     width: 258px;
     height: 350px;
     position: relative;
