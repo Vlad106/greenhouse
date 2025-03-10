@@ -834,7 +834,7 @@ input:focus{
             filter: brightness(95%);
             transition: all 0.3s ease-in-out;
         }
-        >a{
+        span{
             display: inline-block;
             font-family: 'Cera Pro', sans-serif;
             font-weight: 700;
