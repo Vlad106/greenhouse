@@ -19,7 +19,7 @@
 <body>
 <header class="header">
     <div class="container-header">
-        <a class="first-logo" href="./index.html"><img src="./photo/greenshop-logo1.svg" alt="logo1"></a>
+        <a class="first-logo" href="./index.html"><svg width="150" height="35"><use href="./sprite.svg#main-logo"></use></svg></a>
         <nav class="navigation">
             <ul class="menu">
                 <li><a class="name-list" href="#">Home</a></li>
@@ -30,10 +30,8 @@
                         <li><a href="#">Fungicides</a></li>
                         <li><a href="#">Fertilizer</a></li>
                         <li><a href="#">Priming
-                            <svg width="6" height="10" viewBox="0 0 7 10" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.14228 0.945805C0.909014 0.730097 0.908201 0.379612 1.14046 0.162973C1.35161 -0.0339699 1.68269 -0.0524979 1.9164 0.107825L1.98337 0.161288L6.79132 4.60737C7.00401 4.80406 7.02336 5.11265 6.84935 5.32969L6.79135 5.39186L1.9834 9.83868C1.75016 10.0544 1.37278 10.0537 1.1405 9.83706C0.929333 9.64013 0.910782 9.33257 1.08439 9.1162L1.14224 9.05423L5.52584 4.99941L1.14228 0.945805Z"
-                                      fill="#3D3D3D"/>
+                            <svg width="7" height="10">
+                                <use href="./sprite.svg#arrow-dropdown"></use>
                             </svg>
                         </a>
                             <ul class="sub-sub-menu">
@@ -50,10 +48,20 @@
                 <li><a class="name-list" href="#">Blogs</a></li>
             </ul>
         </nav>
-        <button class="btn-register login" onclick="window.location.href ='./registration.html'">
-            <img class="logout" src="./photo/logout.svg" alt="logout">
-            Login
-        </button>
+        <div class="header-filter">
+            <svg class="icon-head" width="24" height="24" cursor="pointer">
+                <use href="../sprite.svg#lupa"></use>
+            </svg>
+            <svg class="icon-head" width="29px" height="29px" cursor="pointer">
+                <use cursor="pointer" href="../sprite.svg#vector"></use>
+            </svg>
+            <button class="btn-register" onclick="window.location.href ='./registration.html'">
+                <svg style="color: #FFFFFF" width="20" height="20">
+                    <use href="./sprite.svg#logout"></use>
+                </svg>
+                <span class="login">Login</span>
+            </button>
+        </div>
     </div>
 </header>
 <main class="main">
@@ -100,7 +108,7 @@
                 <a class="filter-name">Sale</a>
             </div>
             <p class="filter-menu">Short by: Default sorting
-                <img src="./photo/arrow-down.svg" alt="arrow">
+                <svg style="color: #3D3D3D" width="16" height="16"><use href="./sprite.svg#arrow-down"></use></svg>
             </p>
         </div>
         <div class="content-img">
@@ -108,9 +116,9 @@
                 <div class="item-card">
                     <img class="flower-img" src="./photo/spiderlily.png" alt="spiderlily">
                     <div class="card-png">
-                        <img src="./photo/shopping1.svg" alt="shopping basket">
-                        <img src="./photo/heart1.svg" alt="heart">
-                        <img src="./photo/frame1.svg" alt="frame">
+                        <svg width="20" height="20"><use href="./sprite.svg#shopping-basket"></use></svg>
+                        <svg width="20" height="20"><use href="./sprite.svg#heart"></use></svg>
+                        <svg width="20" height="20"><use href="./sprite.svg#frame"></use></svg>
                     </div>
                     <div class="description-card">
                         <h4 class="flower-name">Beach Spider Lily</h4>
@@ -122,9 +130,9 @@
                 <div class="item-card">
                     <img class="flower-img" src="./photo/spiderlily.png" alt="spiderlily">
                     <div class="card-png">
-                        <img src="./photo/shopping1.svg" alt="shopping basket">
-                        <img src="./photo/heart1.svg" alt="heart">
-                        <img src="./photo/frame1.svg" alt="frame">
+                        <svg width="20" height="20"><use href="./sprite.svg#shopping-basket"></use></svg>
+                        <svg width="20" height="20"><use href="./sprite.svg#heart"></use></svg>
+                        <svg width="20" height="20"><use href="./sprite.svg#frame"></use></svg>
                     </div>
                     <div class="description-card">
                         <h4 class="flower-name">Beach Spider Lily</h4>
@@ -135,11 +143,11 @@
             <div>
                 <div class="item-card">
                     <img class="flower-img" src="./photo/spiderlily.png" alt="spiderlily">
-                    <img class="sale" src="./photo/sale.svg" alt="sale 13%">
+                    <svg class="sale" width="80" height="29"><use href="./sprite.svg#sale"></use></svg>
                     <div class="card-png">
-                        <img src="./photo/shopping1.svg" alt="shopping basket">
-                        <img src="./photo/heart1.svg" alt="heart">
-                        <img src="./photo/frame1.svg" alt="frame">
+                        <svg width="20" height="20"><use href="./sprite.svg#shopping-basket"></use></svg>
+                        <svg width="20" height="20"><use href="./sprite.svg#heart"></use></svg>
+                        <svg width="20" height="20"><use href="./sprite.svg#frame"></use></svg>
                     </div>
                     <div class="description-card">
                         <h4 class="flower-name">Beach Spider Lily</h4>
@@ -151,9 +159,9 @@
                 <div class="item-card">
                     <img class="flower-img" src="./photo/spiderlily.png" alt="spiderlily">
                     <div class="card-png">
-                        <img src="./photo/shopping1.svg" alt="shopping basket">
-                        <img src="./photo/heart1.svg" alt="heart">
-                        <img src="./photo/frame1.svg" alt="frame">
+                        <svg width="20" height="20"><use href="./sprite.svg#shopping-basket"></use></svg>
+                        <svg width="20" height="20"><use href="./sprite.svg#heart"></use></svg>
+                        <svg width="20" height="20"><use href="./sprite.svg#frame"></use></svg>
                     </div>
                     <div class="description-card">
                         <h4 class="flower-name">Beach Spider Lily</h4>
@@ -165,9 +173,9 @@
                 <div class="item-card">
                     <img class="flower-img" src="./photo/spiderlily.png" alt="spiderlily">
                     <div class="card-png">
-                        <img src="./photo/shopping1.svg" alt="shopping basket">
-                        <img src="./photo/heart1.svg" alt="heart">
-                        <img src="./photo/frame1.svg" alt="frame">
+                        <svg width="20" height="20"><use href="./sprite.svg#shopping-basket"></use></svg>
+                        <svg width="20" height="20"><use href="./sprite.svg#heart"></use></svg>
+                        <svg width="20" height="20"><use href="./sprite.svg#frame"></use></svg>
                     </div>
                     <div class="description-card">
                         <h4 class="flower-name">Beach Spider Lily</h4>
@@ -179,9 +187,9 @@
                 <div class="item-card">
                     <img class="flower-img" src="./photo/spiderlily.png" alt="spiderlily">
                     <div class="card-png">
-                        <img src="./photo/shopping1.svg" alt="shopping basket">
-                        <img src="./photo/heart1.svg" alt="heart">
-                        <img src="./photo/frame1.svg" alt="frame">
+                        <svg width="20" height="20"><use href="./sprite.svg#shopping-basket"></use></svg>
+                        <svg width="20" height="20"><use href="./sprite.svg#heart"></use></svg>
+                        <svg width="20" height="20"><use href="./sprite.svg#frame"></use></svg>
                     </div>
                     <div class="description-card">
                         <h4 class="flower-name">Beach Spider Lily</h4>
@@ -193,9 +201,9 @@
                 <div class="item-card">
                     <img class="flower-img" src="./photo/spiderlily.png" alt="spiderlily">
                     <div class="card-png">
-                        <img src="./photo/shopping1.svg" alt="shopping basket">
-                        <img src="./photo/heart1.svg" alt="heart">
-                        <img src="./photo/frame1.svg" alt="frame">
+                        <svg width="20" height="20"><use href="./sprite.svg#shopping-basket"></use></svg>
+                        <svg width="20" height="20"><use href="./sprite.svg#heart"></use></svg>
+                        <svg width="20" height="20"><use href="./sprite.svg#frame"></use></svg>
                     </div>
                     <div class="description-card">
                         <h4 class="flower-name">Beach Spider Lily</h4>
@@ -207,9 +215,9 @@
                 <div class="item-card">
                     <img class="flower-img" src="./photo/spiderlily.png" alt="spiderlily">
                     <div class="card-png">
-                        <img src="./photo/shopping1.svg" alt="shopping basket">
-                        <img src="./photo/heart1.svg" alt="heart">
-                        <img src="./photo/frame1.svg" alt="frame">
+                        <svg width="20" height="20"><use href="./sprite.svg#shopping-basket"></use></svg>
+                        <svg width="20" height="20"><use href="./sprite.svg#heart"></use></svg>
+                        <svg width="20" height="20"><use href="./sprite.svg#frame"></use></svg>
                     </div>
                     <div class="description-card">
                         <h4 class="flower-name">Beach Spider Lily</h4>
@@ -221,9 +229,9 @@
                 <div class="item-card">
                     <img class="flower-img" src="./photo/spiderlily.png" alt="spiderlily">
                     <div class="card-png">
-                        <img src="./photo/shopping1.svg" alt="shopping basket">
-                        <img src="./photo/heart1.svg" alt="heart">
-                        <img src="./photo/frame1.svg" alt="frame">
+                        <svg width="20" height="20"><use href="./sprite.svg#shopping-basket"></use></svg>
+                        <svg width="20" height="20"><use href="./sprite.svg#heart"></use></svg>
+                        <svg width="20" height="20"><use href="./sprite.svg#frame"></use></svg>
                     </div>
                     <div class="description-card">
                         <h4 class="flower-name">Beach Spider Lily</h4>
@@ -239,7 +247,7 @@
     <a class="pagination-number" href="#">2</a>
     <a class="pagination-number" href="#">3</a>
     <a class="pagination-number" href="#">4</a>
-    <a class="pagination-number" href="#"><img src="./photo/arrow-right.png" alt="arrow-right"></a>
+    <a class="pagination-number" href="#"><svg width="8" height="12"><use href="./sprite.svg#arrow-right"></use></svg></a>
 </div>
 <section class="section-blog">
     <div class="first-frame">
@@ -250,8 +258,7 @@
             <div class="blog-text">
                 <h2 class="head-frame">SUMMER CACTUS & SUCCULENTS</h2>
                 <p class="descr-blog">We are an online plant shop offering a wide range of cheap and trendy plants</p>
-                <button class="more-inf"><span>Find More</span><img class="btn-arrow" src="./photo/arrow-flex.svg"
-                                                                    alt="arrow-right"></button>
+                <button class="more-inf"><span>Find More</span><svg width="14" height="12"><use href="./sprite.svg#arrow-flex"></use></svg></button>
             </div>
         </div>
         <div class="styling-trends">
@@ -261,8 +268,7 @@
             <div class="blog-text">
                 <h2 class="head-frame">STYLING TRENDS & MUCH MORE</h2>
                 <p class="descr-blog">We are an online plant shop offering a wide range of cheap and trendy plants</p>
-                <button class="more-inf"><span>Find More</span><img class="btn-arrow" src="./photo/arrow-flex.svg"
-                                                                    alt="arrow-right"></button>
+                <button class="more-inf"><span>Find More</span><svg width="14" height="12"><use href="./sprite.svg#arrow-flex"></use></svg></button>
             </div>
         </div>
     </div>
@@ -278,8 +284,11 @@
                     <p class="personal-inf">September 12 I Read in 6 minutes</p>
                     <h3 class="head-content">Cactus & Succulent Care Tips</h3>
                     <p class="descr-content">Cacti are succulents are easy care plants for any home or patio.</p>
-                    <button class="btn-blog">Read More<img class="arrow-black" src="./photo/arrow-black.svg"
-                                                           alt="arrow-right"></button>
+                    <button class="btn-blog">Read More
+                        <svg width="12" height="10" viewBox="0 0 12 10">
+                            <use href="./sprite.svg#arrow-black"></use>
+                        </svg>
+                    </button>
                 </div>
             </div>
             <div class="blog-card">
@@ -288,8 +297,11 @@
                     <p class="personal-inf">September 13 I Read in 2 minutes</p>
                     <h3 class="head-content">Top 10 Succulents for Your Home</h3>
                     <p class="descr-content">Best in hanging baskets. Prefers medium to high light.</p>
-                    <button class="btn-blog">Read More<img class="arrow-black" src="./photo/arrow-black.svg"
-                                                           alt="arrow-right"></button>
+                    <button class="btn-blog">Read More
+                        <svg width="12" height="10" viewBox="0 0 12 10">
+                            <use href="./sprite.svg#arrow-black"></use>
+                        </svg>
+                    </button>
                 </div>
             </div>
             <div class="blog-card">
@@ -298,8 +310,11 @@
                     <p class="personal-inf">September 15 I Read in 3 minutes</p>
                     <h3 class="head-content">Cacti & Succulent Care Tips</h3>
                     <p class="descr-content">Cacti and succulents thrive in containers and because most are..</p>
-                    <button class="btn-blog">Read More<img class="arrow-black" src="./photo/arrow-black.svg"
-                                                           alt="arrow-right"></button>
+                    <button class="btn-blog">Read More
+                        <svg width="12" height="10" viewBox="0 0 12 10">
+                            <use href="./sprite.svg#arrow-black"></use>
+                        </svg>
+                    </button>
                 </div>
             </div>
             <div class="blog-card">
@@ -308,8 +323,11 @@
                     <p class="personal-inf">September 15 I Read in 2 minutes</p>
                     <h3 class="head-content">Best Houseplants Room by Room</h3>
                     <p class="descr-content">The benefits of houseplants are endless. In addition to..</p>
-                    <button class="btn-blog">Read More<img class="arrow-black" src="./photo/arrow-black.svg"
-                                                           alt="arrow-right"></button>
+                    <button class="btn-blog">Read More
+                        <svg width="12" height="10" viewBox="0 0 12 10">
+                            <use href="./sprite.svg#arrow-black"></use>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
@@ -340,7 +358,7 @@
                         <label>
                             <input type="email" placeholder="Enter your email address...">
                         </label>
-                        <button>Join</button>
+                        <button><a href="#">Join</a></button>
                     </form>
                 </div>
                 <p>We usually post offers and challenges in newsletter. We’re your online houseplant destination. We
@@ -350,7 +368,7 @@
         </div>
         <div class="contact-container">
             <div class="contact-info">
-                <img src="./photo/greenshop-logo1.svg" alt="greenshop logo">
+                <a href="./index.html" style="cursor: pointer"><svg width="150" height="35"><use href="./sprite.svg#main-logo"></use></svg></a>
                 <a href="https://maps.app.goo.gl/8MGgmFksL2FSiNiZ7"><i class="fa-solid fa-location-dot"
                                                                        style="color: #46a358;"></i>70 West Buckingham
                     Ave.
