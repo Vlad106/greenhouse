@@ -6,44 +6,85 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./registration.css">
+    <link rel="stylesheet" href="./fonts.css">
     <title>Form</title>
 </head>
 <body>
-    <div class="container">
-        <button class="close_item">&times;</button>
-        <div class="buttons"> <button class="head_form">Login</button>
-            <span class="diverse">|</span>
-            <button class="head_form" style="color: #46A358">Register</button>
-        </div>
+<div class="container">
+    <button class="close_item">&times;</button>
+    <div class="buttons">
+        <button class="head_form">Login</button>
+        <span class="diverse">|</span>
+        <button class="head_form" style="color: #46A358">Register</button>
+    </div>
     <form class="form">
         <p class="form_descr">Enter your email and password to register.</p>
         <label class="label" for="name">Username</label>
-        <input class="inputt" type="text" id="name" placeholder="Username" required>
+        <input class="input" type="text" id="name" placeholder="Username" required>
         <label class="label" for="email">Enter your email address</label>
-        <input class="inputt" type="email" id="email" placeholder="Enter your email address" required>
-        <label class="label" for="password">Password</label>
-        <input class="inputt" type="password" id="password" placeholder="Password" minlength="8" required>
-        <label class="label" for="confirm_password">Confirm Password</label>
-        <input class="inputt" type="password" id="confirm_password" placeholder="Confirm password">
-        <button class="button_form" type="submit">Register</button>
+        <input class="input" type="email" id="email" placeholder="Enter your email address" required>
+        <div>
+            <label class="label" for="password">Password</label>
+            <input class="input" type="password" id="password" placeholder="Password" minlength="8" required>
+            <button class="toggle-pass"><svg width="18" height="16"><use href="./sprite.svg#hide"></use></svg></button>
+        </div>
+        <div>
+            <label class="label" for="confirm_password">Confirm Password</label>
+            <input class="input" type="password" id="confirm_password" placeholder="Confirm password">
+            <button class="toggle-pass"><svg width="18" height="16"><use href="./sprite.svg#hide"></use></svg></button>
+        </div>
+        <button class="button_form" t ype="submit">Register</button>
         <span class="form_end">Or register with</span>
-        <button class="btn-social"> <img class="logo1" alt="Google logo" src="./photo/google1.svg">Continue with Google</button>
-        <button class="btn-social"> <img class="logo2" alt="Facebook logo" src="./photo/facebook1.svg">Continue with Facebook</button>
+        <button class="btn-social">
+            <svg width="20" height="20">
+                <use href="./sprite.svg#google">
+                    </use>
+                    </svg>
+                    Continue with Google
+        </button>
+        <button class="btn-social">
+            <svg width="20" height="20">
+                <use href="./sprite.svg#facebook">
+                    </use>
+            </svg>
+                    Continue with
+                    Facebook
+        </button>
     </form>
     <footer class="box"></footer>
 </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const closeButton = document.querySelector(".close_item");
-            const formContainer = document.querySelector(".container");
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const closeButton = document.querySelector(".close_item");
+        const formContainer = document.querySelector(".container");
 
-            closeButton.addEventListener("click", function() {
-                formContainer.classList.add("hide");
-                setTimeout(() => {
-                    window.location.href = "./index.html";
-                }, 500);
-            });
+        closeButton.addEventListener("click", function () {
+            formContainer.classList.add("hide");
+            setTimeout(() => {
+                window.location.href = "./index.html";
+            }, 500);
         });
-    </script>
+    });
+</script>
+<script>
+
+    const togglePass = document.querySelectorAll('.toggle-pass');
+    togglePass.forEach((toggle) => {
+        toggle.addEventListener('click', (event) => {
+            event.preventDefault();
+            const input = toggle.previousElementSibling;
+            const useTag = toggle.querySelector("use");
+            if (input.type === 'password') {
+                input.type = 'text';
+                input.focus();
+               toggle.innerHTML = '<svg width="18" height="16"><use href="./sprite.svg#show"></use></svg>';
+            } else {
+                input.type = 'password';
+                input.focus();
+                toggle.innerHTML = '<svg width="18" height="16"><use href="./sprite.svg#hide"></use></svg>';
+            }
+        });
+    });
+</script>
 </body>
 </html>

@@ -16,239 +16,244 @@
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded&display=swap" rel="stylesheet">
     <title>Greenshop</title>
 </head>
-<body>
-<header class="header">
-    <div class="container-header">
-        <a class="first-logo" href="./index.html"><svg width="150" height="35"><use href="./sprite.svg#main-logo"></use></svg></a>
-        <nav class="navigation">
-            <ul class="menu">
-                <li><a class="name-list" href="#">Home</a></li>
-                <li><a class="name-list" href="#">Shop</a></li>
-                <li><a class="name-list" href="#">Plant Care</a>
-                    <ul class="sub-menu">
-                        <li><a href="#">Drainage</a></li>
-                        <li><a href="#">Fungicides</a></li>
-                        <li><a href="#">Fertilizer</a></li>
-                        <li><a href="#">Priming
-                            <svg width="7" height="10">
-                                <use href="./sprite.svg#arrow-dropdown"></use>
-                            </svg>
-                        </a>
-                            <ul class="sub-sub-menu">
-                                <li><a href="#">Universal</a></li>
-                                <li><a href="#">For Ficus</a></li>
-                                <li><a href="#">For Cacti</a></li>
-                                <li><a href="#">For Citrus</a></li>
-                                <li><a href="#">For those in bloom</a></li>
-                                <li><a href="#">For Orchids</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li><a class="name-list" href="#">Blogs</a></li>
-            </ul>
-        </nav>
-        <div class="header-filter">
-            <svg class="icon-head" width="24" height="24" cursor="pointer">
-                <use href="../sprite.svg#lupa"></use>
-            </svg>
-            <svg class="icon-head" width="29px" height="29px" cursor="pointer">
-                <use cursor="pointer" href="../sprite.svg#vector"></use>
-            </svg>
-            <button class="btn-register" onclick="window.location.href ='./registration.html'">
-                <svg style="color: #FFFFFF" width="20" height="20">
-                    <use href="./sprite.svg#logout"></use>
+<body class="overlay">
+<div class="loader"></div>
+<main>
+    <header class="header">
+        <div class="container-header">
+            <a class="first-logo" href="./index.html"><svg width="150" height="35"><use href="./sprite.svg#main-logo"></use></svg></a>
+            <nav class="navigation">
+                <ul class="menu">
+                    <li><a class="name-list" href="#">Home</a></li>
+                    <li><a class="name-list" href="#">Shop</a></li>
+                    <li><a class="name-list" href="#">Plant Care</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Drainage</a></li>
+                            <li><a href="#">Fungicides</a></li>
+                            <li><a href="#">Fertilizer</a></li>
+                            <li><a href="#">Priming
+                                <svg width="7" height="10">
+                                    <use href="./sprite.svg#arrow-dropdown"></use>
+                                </svg>
+                            </a>
+                                <ul class="sub-sub-menu">
+                                    <li><a href="#">Universal</a></li>
+                                    <li><a href="#">For Ficus</a></li>
+                                    <li><a href="#">For Cacti</a></li>
+                                    <li><a href="#">For Citrus</a></li>
+                                    <li><a href="#">For those in bloom</a></li>
+                                    <li><a href="#">For Orchids</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a class="name-list" href="#">Blogs</a></li>
+                </ul>
+            </nav>
+            <div class="header-filter">
+                <svg class="icon-head" width="24" height="24" cursor="pointer">
+                    <use href="../sprite.svg#lupa"></use>
                 </svg>
-                <span class="login">Login</span>
-            </button>
+                <svg class="icon-head" width="29px" height="29px" cursor="pointer">
+                    <use cursor="pointer" href="../sprite.svg#vector"></use>
+                </svg>
+                <button class="btn-register" onclick="window.location.href ='./registration.html'">
+                    <svg style="color: #FFFFFF" width="20" height="20">
+                        <use href="./sprite.svg#logout"></use>
+                    </svg>
+                    <span class="login">Login</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="text">
+            <h2 class="welcome">WELCOME TO GREENSHOP</h2>
+            <h1 class="main-item">Let’s Make a
+                Better<span class="part2"> Planet</span></h1>
+            <p class="descr-item">We are an online plant shop offering a wide range of cheap and trendy plants. Use our
+                plants to create an unique Urban Jungle. Order your favorite plants!</p>
+            <button class="for_buy" onclick="window.location.href='#'"><span class="go-to-shop">SHOP NOW</span></button>
+        </div>
+        <div class="main-img">
+            <img class="pic1" src="./photo/plant2.png" alt="plant2">
+            <img class="pic2" src="./photo/plant1.png" alt="plant1">
+        </div>
+    </main>
+    <div class="main-container">
+        <div class="sidebar">
+            <div class="aside-list">
+                <h4 class="head-list">Categories</h4>
+                <aside>
+                    <ul class="categories-list">
+                        <li><a class="categories-name" href="#">House Plants</a></li>
+                        <li><a class="categories-name" href="#">Potter Plants</a></li>
+                        <li><a class="categories-name" href="#">Seeds</a></li>
+                        <li><a class="categories-name" href="#">Small Plants</a></li>
+                        <li><a class="categories-name" href="#">Big Plants</a></li>
+                        <li><a class="categories-name" href="#">Succulents</a></li>
+                        <li><a class="categories-name" href="#">Trerrariums</a></li>
+                        <li><a class="categories-name" href="#">Gardening</a></li>
+                        <li><a class="categories-name" href="#">Accessories</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="img-banner">
+                <img class="banner" src="./photo/salebanner.png" alt="sale banner">
+            </div>
+        </div>
+        <div class="container-content">
+            <div class="filter">
+                <div class="head-img">
+                    <a class="filter-name">All Plants</a>
+                    <a class="filter-name">New Arrivals</a>
+                    <a class="filter-name">Sale</a>
+                </div>
+                <p class="filter-menu">Short by: Default sorting
+                    <svg style="color: #3D3D3D" width="16" height="16"><use href="./sprite.svg#arrow-down"></use></svg>
+                </p>
+            </div>
+            <div class="content-img">
+                <div>
+                    <div class="item-card">
+                        <img class="flower-img" src="./photo/spiderlily.png" alt="spiderlily">
+                        <div class="card-png">
+                            <svg width="20" height="20"><use href="./sprite.svg#shopping-basket"></use></svg>
+                            <svg width="20" height="20"><use href="./sprite.svg#heart"></use></svg>
+                            <svg width="20" height="20"><use href="./sprite.svg#frame"></use></svg>
+                        </div>
+                        <div class="description-card">
+                            <h4 class="flower-name">Beach Spider Lily</h4>
+                            <p class="price">$129.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item-card">
+                        <img class="flower-img" src="./photo/spiderlily.png" alt="spiderlily">
+                        <div class="card-png">
+                            <svg width="20" height="20"><use href="./sprite.svg#shopping-basket"></use></svg>
+                            <svg width="20" height="20"><use href="./sprite.svg#heart"></use></svg>
+                            <svg width="20" height="20"><use href="./sprite.svg#frame"></use></svg>
+                        </div>
+                        <div class="description-card">
+                            <h4 class="flower-name">Beach Spider Lily</h4>
+                            <p class="price">$129.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item-card">
+                        <img class="flower-img" src="./photo/spiderlily.png" alt="spiderlily">
+                        <svg class="sale" width="80" height="29"><use href="./sprite.svg#sale"></use></svg>
+                        <div class="card-png">
+                            <svg width="20" height="20"><use href="./sprite.svg#shopping-basket"></use></svg>
+                            <svg width="20" height="20"><use href="./sprite.svg#heart"></use></svg>
+                            <svg width="20" height="20"><use href="./sprite.svg#frame"></use></svg>
+                        </div>
+                        <div class="description-card">
+                            <h4 class="flower-name">Beach Spider Lily</h4>
+                            <p class="price">$112.00 <span class="irl-price">$129.00</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item-card">
+                        <img class="flower-img" src="./photo/spiderlily.png" alt="spiderlily">
+                        <div class="card-png">
+                            <svg width="20" height="20"><use href="./sprite.svg#shopping-basket"></use></svg>
+                            <svg width="20" height="20"><use href="./sprite.svg#heart"></use></svg>
+                            <svg width="20" height="20"><use href="./sprite.svg#frame"></use></svg>
+                        </div>
+                        <div class="description-card">
+                            <h4 class="flower-name">Beach Spider Lily</h4>
+                            <p class="price">$129.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item-card">
+                        <img class="flower-img" src="./photo/spiderlily.png" alt="spiderlily">
+                        <div class="card-png">
+                            <svg width="20" height="20"><use href="./sprite.svg#shopping-basket"></use></svg>
+                            <svg width="20" height="20"><use href="./sprite.svg#heart"></use></svg>
+                            <svg width="20" height="20"><use href="./sprite.svg#frame"></use></svg>
+                        </div>
+                        <div class="description-card">
+                            <h4 class="flower-name">Beach Spider Lily</h4>
+                            <p class="price">$129.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item-card">
+                        <img class="flower-img" src="./photo/spiderlily.png" alt="spiderlily">
+                        <div class="card-png">
+                            <svg width="20" height="20"><use href="./sprite.svg#shopping-basket"></use></svg>
+                            <svg width="20" height="20"><use href="./sprite.svg#heart"></use></svg>
+                            <svg width="20" height="20"><use href="./sprite.svg#frame"></use></svg>
+                        </div>
+                        <div class="description-card">
+                            <h4 class="flower-name">Beach Spider Lily</h4>
+                            <p class="price">$129.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item-card">
+                        <img class="flower-img" src="./photo/spiderlily.png" alt="spiderlily">
+                        <div class="card-png">
+                            <svg width="20" height="20"><use href="./sprite.svg#shopping-basket"></use></svg>
+                            <svg width="20" height="20"><use href="./sprite.svg#heart"></use></svg>
+                            <svg width="20" height="20"><use href="./sprite.svg#frame"></use></svg>
+                        </div>
+                        <div class="description-card">
+                            <h4 class="flower-name">Beach Spider Lily</h4>
+                            <p class="price">$129.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item-card">
+                        <img class="flower-img" src="./photo/spiderlily.png" alt="spiderlily">
+                        <div class="card-png">
+                            <svg width="20" height="20"><use href="./sprite.svg#shopping-basket"></use></svg>
+                            <svg width="20" height="20"><use href="./sprite.svg#heart"></use></svg>
+                            <svg width="20" height="20"><use href="./sprite.svg#frame"></use></svg>
+                        </div>
+                        <div class="description-card">
+                            <h4 class="flower-name">Beach Spider Lily</h4>
+                            <p class="price">$129.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item-card">
+                        <img class="flower-img" src="./photo/spiderlily.png" alt="spiderlily">
+                        <div class="card-png">
+                            <svg width="20" height="20"><use href="./sprite.svg#shopping-basket"></use></svg>
+                            <svg width="20" height="20"><use href="./sprite.svg#heart"></use></svg>
+                            <svg width="20" height="20"><use href="./sprite.svg#frame"></use></svg>
+                        </div>
+                        <div class="description-card">
+                            <h4 class="flower-name">Beach Spider Lily</h4>
+                            <p class="price">$129.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</header>
-<main class="main">
-    <div class="text">
-        <h2 class="welcome">WELCOME TO GREENSHOP</h2>
-        <h1 class="main-item">Let’s Make a
-            Better<span class="part2"> Planet</span></h1>
-        <p class="descr-item">We are an online plant shop offering a wide range of cheap and trendy plants. Use our
-            plants to create an unique Urban Jungle. Order your favorite plants!</p>
-        <button class="for_buy" onclick="window.location.href='#'"><span class="go-to-shop">SHOP NOW</span></button>
-    </div>
-    <div class="main-img">
-        <img class="pic1" src="./photo/plant2.png" alt="plant2">
-        <img class="pic2" src="./photo/plant1.png" alt="plant1">
+    <div class="pagination">
+        <a class="pagination-number" href="#">1</a>
+        <a class="pagination-number" href="#">2</a>
+        <a class="pagination-number" href="#">3</a>
+        <a class="pagination-number" href="#">4</a>
+        <a class="pagination-number" href="#"><svg width="8" height="12"><use href="./sprite.svg#arrow-right"></use></svg></a>
     </div>
 </main>
-<div class="main-container">
-    <div class="sidebar">
-        <div class="aside-list">
-            <h4 class="head-list">Categories</h4>
-            <aside>
-                <ul class="categories-list">
-                    <li><a class="categories-name" href="#">House Plants</a></li>
-                    <li><a class="categories-name" href="#">Potter Plants</a></li>
-                    <li><a class="categories-name" href="#">Seeds</a></li>
-                    <li><a class="categories-name" href="#">Small Plants</a></li>
-                    <li><a class="categories-name" href="#">Big Plants</a></li>
-                    <li><a class="categories-name" href="#">Succulents</a></li>
-                    <li><a class="categories-name" href="#">Trerrariums</a></li>
-                    <li><a class="categories-name" href="#">Gardening</a></li>
-                    <li><a class="categories-name" href="#">Accessories</a></li>
-                </ul>
-            </aside>
-        </div>
-        <div class="img-banner">
-            <img class="banner" src="./photo/salebanner.png" alt="sale banner">
-        </div>
-    </div>
-    <div class="container-content">
-        <div class="filter">
-            <div class="head-img">
-                <a class="filter-name">All Plants</a>
-                <a class="filter-name">New Arrivals</a>
-                <a class="filter-name">Sale</a>
-            </div>
-            <p class="filter-menu">Short by: Default sorting
-                <svg style="color: #3D3D3D" width="16" height="16"><use href="./sprite.svg#arrow-down"></use></svg>
-            </p>
-        </div>
-        <div class="content-img">
-            <div>
-                <div class="item-card">
-                    <img class="flower-img" src="./photo/spiderlily.png" alt="spiderlily">
-                    <div class="card-png">
-                        <svg width="20" height="20"><use href="./sprite.svg#shopping-basket"></use></svg>
-                        <svg width="20" height="20"><use href="./sprite.svg#heart"></use></svg>
-                        <svg width="20" height="20"><use href="./sprite.svg#frame"></use></svg>
-                    </div>
-                    <div class="description-card">
-                        <h4 class="flower-name">Beach Spider Lily</h4>
-                        <p class="price">$129.00</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="item-card">
-                    <img class="flower-img" src="./photo/spiderlily.png" alt="spiderlily">
-                    <div class="card-png">
-                        <svg width="20" height="20"><use href="./sprite.svg#shopping-basket"></use></svg>
-                        <svg width="20" height="20"><use href="./sprite.svg#heart"></use></svg>
-                        <svg width="20" height="20"><use href="./sprite.svg#frame"></use></svg>
-                    </div>
-                    <div class="description-card">
-                        <h4 class="flower-name">Beach Spider Lily</h4>
-                        <p class="price">$129.00</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="item-card">
-                    <img class="flower-img" src="./photo/spiderlily.png" alt="spiderlily">
-                    <svg class="sale" width="80" height="29"><use href="./sprite.svg#sale"></use></svg>
-                    <div class="card-png">
-                        <svg width="20" height="20"><use href="./sprite.svg#shopping-basket"></use></svg>
-                        <svg width="20" height="20"><use href="./sprite.svg#heart"></use></svg>
-                        <svg width="20" height="20"><use href="./sprite.svg#frame"></use></svg>
-                    </div>
-                    <div class="description-card">
-                        <h4 class="flower-name">Beach Spider Lily</h4>
-                        <p class="price">$112.00 <span class="irl-price">$129.00</span></p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="item-card">
-                    <img class="flower-img" src="./photo/spiderlily.png" alt="spiderlily">
-                    <div class="card-png">
-                        <svg width="20" height="20"><use href="./sprite.svg#shopping-basket"></use></svg>
-                        <svg width="20" height="20"><use href="./sprite.svg#heart"></use></svg>
-                        <svg width="20" height="20"><use href="./sprite.svg#frame"></use></svg>
-                    </div>
-                    <div class="description-card">
-                        <h4 class="flower-name">Beach Spider Lily</h4>
-                        <p class="price">$129.00</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="item-card">
-                    <img class="flower-img" src="./photo/spiderlily.png" alt="spiderlily">
-                    <div class="card-png">
-                        <svg width="20" height="20"><use href="./sprite.svg#shopping-basket"></use></svg>
-                        <svg width="20" height="20"><use href="./sprite.svg#heart"></use></svg>
-                        <svg width="20" height="20"><use href="./sprite.svg#frame"></use></svg>
-                    </div>
-                    <div class="description-card">
-                        <h4 class="flower-name">Beach Spider Lily</h4>
-                        <p class="price">$129.00</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="item-card">
-                    <img class="flower-img" src="./photo/spiderlily.png" alt="spiderlily">
-                    <div class="card-png">
-                        <svg width="20" height="20"><use href="./sprite.svg#shopping-basket"></use></svg>
-                        <svg width="20" height="20"><use href="./sprite.svg#heart"></use></svg>
-                        <svg width="20" height="20"><use href="./sprite.svg#frame"></use></svg>
-                    </div>
-                    <div class="description-card">
-                        <h4 class="flower-name">Beach Spider Lily</h4>
-                        <p class="price">$129.00</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="item-card">
-                    <img class="flower-img" src="./photo/spiderlily.png" alt="spiderlily">
-                    <div class="card-png">
-                        <svg width="20" height="20"><use href="./sprite.svg#shopping-basket"></use></svg>
-                        <svg width="20" height="20"><use href="./sprite.svg#heart"></use></svg>
-                        <svg width="20" height="20"><use href="./sprite.svg#frame"></use></svg>
-                    </div>
-                    <div class="description-card">
-                        <h4 class="flower-name">Beach Spider Lily</h4>
-                        <p class="price">$129.00</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="item-card">
-                    <img class="flower-img" src="./photo/spiderlily.png" alt="spiderlily">
-                    <div class="card-png">
-                        <svg width="20" height="20"><use href="./sprite.svg#shopping-basket"></use></svg>
-                        <svg width="20" height="20"><use href="./sprite.svg#heart"></use></svg>
-                        <svg width="20" height="20"><use href="./sprite.svg#frame"></use></svg>
-                    </div>
-                    <div class="description-card">
-                        <h4 class="flower-name">Beach Spider Lily</h4>
-                        <p class="price">$129.00</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="item-card">
-                    <img class="flower-img" src="./photo/spiderlily.png" alt="spiderlily">
-                    <div class="card-png">
-                        <svg width="20" height="20"><use href="./sprite.svg#shopping-basket"></use></svg>
-                        <svg width="20" height="20"><use href="./sprite.svg#heart"></use></svg>
-                        <svg width="20" height="20"><use href="./sprite.svg#frame"></use></svg>
-                    </div>
-                    <div class="description-card">
-                        <h4 class="flower-name">Beach Spider Lily</h4>
-                        <p class="price">$129.00</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="pagination">
-    <a class="pagination-number" href="#">1</a>
-    <a class="pagination-number" href="#">2</a>
-    <a class="pagination-number" href="#">3</a>
-    <a class="pagination-number" href="#">4</a>
-    <a class="pagination-number" href="#"><svg width="8" height="12"><use href="./sprite.svg#arrow-right"></use></svg></a>
-</div>
+
+
 <section class="section-blog">
     <div class="first-frame">
         <div class="summer-cactus">
@@ -434,5 +439,17 @@
     </div>
 </footer>
 <script src="https://kit.fontawesome.com/b3fe6bd3c9.js" crossorigin="anonymous"></script>
+<script>
+    window.addEventListener('load', function() {
+        const loader = document.querySelector('.loader');
+        const main = document.querySelector('.main');
+
+        setTimeout(() => {
+            document.body.classList.remove('overlay');
+            loader.style.display = 'none';
+            main.style.display = 'block';
+        }, 1000);
+    });
+</script>
 </body>
 </html>
