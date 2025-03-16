@@ -106,11 +106,11 @@
 <script>
     window.addEventListener('load', function () {
         const loader = document.querySelector('.loader');
-        const main = document.querySelector('.main');
+        const container = document.querySelector('.main');
         setTimeout(() => {
             document.body.classList.remove('overlay');
             loader.style.display = 'none';
-            main.style.display = 'block';
+            container.style.display = 'block';
         }, 1000);
     });
 </script>
