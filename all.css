@@ -10,17 +10,19 @@
     margin: 0 auto;
 }
 
-.header-filter{
+.header-filter {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
     transition: 0.3s;
-    .icon-head{
+
+    .icon-head {
         background-color: transparent;
         padding: 2px;
     }
-    .icon-head:hover{
+
+    .icon-head:hover {
         color: #46A358;
         transition: 0.3s;
     }
@@ -53,6 +55,7 @@
         line-height: 20px;
         background-color: #1A712A;
         transition: all 0.3s ease-in-out;
+
         svg {
             transform: rotate(180deg);
             transition: all .3s ease-in-out;
@@ -168,10 +171,12 @@
     align-items: center;
     gap: 4px;
     cursor: pointer;
-    >svg{
+
+    > svg {
         animation: myAnim 6s linear 0s infinite normal both;
     }
-    &:hover{
+
+    &:hover {
         filter: brightness(95%);
     }
 }
@@ -266,7 +271,8 @@
     background: #46A358;
     padding: 10px 26px 10px 27px;
     cursor: pointer;
-    &:hover{
+
+    &:hover {
         filter: brightness(95%);
     }
 }
@@ -455,7 +461,8 @@
         background: #FFFFFF;
         transition: all 0.3s ease;
         color: #3D3D3D;
-        &:hover{
+
+        &:hover {
             color: #46A358;
             filter: brightness(95%);
             transition: all 0.3s ease;
@@ -522,7 +529,8 @@
     border-radius: 4px;
     padding: 9px 13px 10px 12px;
     transition: all 0.3s ease;
-    >svg{
+
+    > svg {
         transform: rotate(0deg);
         transition: transform .3s ease-in-out;
     }
@@ -537,7 +545,8 @@
     line-height: 16px;
     color: #FFFFFF;
     transition: all 0.3s ease;
-    >svg {
+
+    > svg {
         stroke: #E5E5E5;
         transform: rotate(360deg);
         transition: transform .3s ease-in-out;
@@ -614,18 +623,22 @@
     padding: 11px 28px 9px 28px;
     margin-top: 24px;
     cursor: pointer;
-    >svg{
+
+    > svg {
         animation: back-rotate 0.3s ease-in-out;
     }
+
     &:hover {
         filter: brightness(90%);
         transition: all 0.2s ease;
-        >svg {
+
+        > svg {
             animation: rotate 0.3s ease-in-out;
             animation-fill-mode: forwards;
         }
     }
 }
+
 .btn-arrow {
     margin-left: 6px;
 }
@@ -701,7 +714,8 @@
     line-height: 16px;
     color: #3D3D3D;
     cursor: pointer;
-    >svg{
+
+    > svg {
         animation: back-rotate 0.3s ease-in-out;
     }
 }
@@ -714,36 +728,42 @@
 .btn-blog:active {
     color: #46A358;
     transition: all 0.3s ease;
-    >svg{
+
+    > svg {
         animation: rotate 0.3s ease-in-out forwards;
         color: #46A358;
     }
 }
 
-footer{
+footer {
     max-width: 1200px;
     margin: 115px auto;
 }
-.content-box{
+
+.content-box {
     display: flex;
     align-items: center;
     background-color: #FBFBFB;
     height: 250px;
     gap: 30px;
-    div:first-child{
+
+    div:first-child {
         margin-left: 25px;
     }
 }
-.content-box div:nth-child(3){
+
+.content-box div:nth-child(3) {
     border: none;
 }
-.additional-inf{
+
+.additional-inf {
     display: flex;
     flex-direction: column;
     height: 202px;
     border-right: 1px solid #46A3581A;
     padding-right: 30px;
-    >h3{
+
+    > h3 {
         font-family: 'Cera Pro', sans-serif;
         font-weight: 700;
         font-size: 17px;
@@ -751,23 +771,26 @@ footer{
         color: #3D3D3D;
         margin-bottom: 9px;
     }
-    >p{
+
+    > p {
         font-family: 'Cera Pro', sans-serif;
         font-weight: 400;
         font-size: 14px;
         line-height: 22px;
         color: #727272;
     }
-    >svg{
+
+    > svg {
         margin-bottom: 15px;
     }
 }
 
-.footer-form{
+.footer-form {
     width: 354px;
     height: 202px;
     margin-right: 25px;
-    >h2{
+
+    > h2 {
         font-family: 'Cera Pro', sans-serif;
         font-weight: 700;
         font-size: 18px;
@@ -776,7 +799,8 @@ footer{
         margin-bottom: 12px;
         margin-top: 12px;
     }
-    >p{
+
+    > p {
         font-family: 'Cera Pro', sans-serif;
         font-weight: 400;
         font-size: 13px;
@@ -786,7 +810,8 @@ footer{
         height: 89px;
     }
 }
-input{
+
+input {
     width: 269px;
     height: 40px;
     box-shadow: 0 0 20px 0 #0000000F;
@@ -798,20 +823,23 @@ input{
     font-size: 14px;
     line-height: 16px;
 }
-input:focus-visible{
+
+input:focus-visible {
     outline: none;
 }
-input:focus{
+
+input:focus {
     outline: none;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
     transition: box-shadow 0.2s ease;
 }
 
-.subscribe-form >form{
+.subscribe-form > form {
     height: 40px;
     display: flex;
     margin-bottom: 18px;
-    >button{
+
+    > button {
         width: 85px;
         height: 40px;
         border-top-right-radius: 6px;
@@ -819,11 +847,13 @@ input:focus{
         background-color: #46A358;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
-        &:hover{
+
+        &:hover {
             filter: brightness(95%);
             transition: all 0.3s ease-in-out;
         }
-        span{
+
+        span {
             display: inline-block;
             font-family: 'Cera Pro', sans-serif;
             font-weight: 700;
@@ -835,12 +865,14 @@ input:focus{
         }
     }
 }
-.contact-container{
-    background: rgb(237,246,239);
-    background: linear-gradient(90deg, rgba(237,246,239,1) 35%, rgba(82,195,104,1) 100%);
+
+.contact-container {
+    background: rgb(237, 246, 239);
+    background: linear-gradient(90deg, rgba(237, 246, 239, 1) 35%, rgba(82, 195, 104, 1) 100%);
     height: 88px;
 }
-.contact-info{
+
+.contact-info {
     display: flex;
     margin-left: 23px;
     margin-right: 22px;
@@ -848,34 +880,40 @@ input:focus{
     align-items: center;
     gap: 155px;
     flex-wrap: nowrap;
-    >a{
+
+    > a {
         font-family: 'Cera Pro', sans-serif;
         font-weight: 400;
         font-size: 14px;
         line-height: 22px;
         color: #3D3D3D;
-        i{
+
+        i {
             animation: down 0.3s ease-in-out forwards;
         }
-        &:hover i{
+
+        &:hover i {
             animation: up 0.3s ease-in-out forwards;
         }
     }
-    a:nth-child(3){
+
+    a:nth-child(3) {
         display: flex;
         width: 195px;
         height: 22px;
         gap: 10px;
         align-items: center;
     }
-    a:nth-child(2){
+
+    a:nth-child(2) {
         display: flex;
         width: 205px;
         height: 44px;
         gap: 9px;
         align-items: center;
     }
-    a:last-child{
+
+    a:last-child {
         display: flex;
         width: 140px;
         height: 22px;
@@ -883,39 +921,48 @@ input:focus{
         align-items: center;
     }
 }
-.social-container{
+
+.social-container {
     display: flex;
     height: 236px;
     background-color: #FBFBFB;
     border-bottom: 1px solid #46A35833;
 }
-.help-content{
+
+.help-content {
     display: flex;
     margin-left: 25px;
     margin-top: 30px;
-    div:first-child{
+
+    div:first-child {
         margin-right: 164px;
     }
-    div:nth-child(2){
+
+    div:nth-child(2) {
         margin-right: 140px;
     }
-    div:nth-child(3){
+
+    div:nth-child(3) {
         margin-right: 173px;
     }
-    div{
+
+    div {
         display: flex;
         flex-direction: column;
-        ul{
+
+        ul {
             font-family: 'Cera Pro', sans-serif;
             font-weight: 400;
             font-size: 14px;
             line-height: 30px;
             margin-top: 8px;
-            a{
+
+            a {
                 color: #3D3D3D;
             }
         }
-        h3{
+
+        h3 {
             font-family: 'Cera Pro', sans-serif;
             font-weight: 700;
             font-size: 18px;
@@ -924,6 +971,7 @@ input:focus{
         }
     }
 }
+
 .brand-content {
     margin-top: 33px;
     width: 224px;
@@ -932,7 +980,7 @@ input:focus{
     flex-direction: column;
     gap: 33px;
 
-    h3{
+    h3 {
         font-family: 'Cera Pro', sans-serif;
         font-weight: 700;
         font-size: 18px;
@@ -940,10 +988,12 @@ input:focus{
         margin-bottom: 20px;
     }
 }
-.social-icons{
+
+.social-icons {
     display: flex;
     gap: 10px;
-    a{
+
+    a {
         cursor: pointer;
         border: 1px solid #46A35833;
         width: 30px;
@@ -954,7 +1004,8 @@ input:focus{
         border-radius: 4px;
         color: #46A358;
         opacity: 0.6;
-        &:hover{
+
+        &:hover {
             transition: all 0.3s ease-in-out;
             transform: scale(115%);
             opacity: 0.8;
@@ -962,24 +1013,28 @@ input:focus{
         }
     }
 }
-.pay{
-    h3{
+
+.pay {
+    h3 {
         margin-bottom: 13px;
     }
 }
-.copyright{
+
+.copyright {
     display: flex;
     justify-content: center;
     margin-top: 2px;
     height: 30px;
     align-items: center;
-    >p{
+
+    > p {
         font-family: 'Cera Pro', sans-serif;
         font-weight: 400;
         font-size: 14px;
         line-height: 30px;
     }
 }
+
 @keyframes back-rotate {
     from {
         transform: translateX(4px);
@@ -997,6 +1052,7 @@ input:focus{
         transform: translateX(4px);
     }
 }
+
 @keyframes myAnim {
     0%,
     100% {
@@ -1024,6 +1080,7 @@ input:focus{
         transform: translateX(-3px);
     }
 }
+
 @keyframes shake {
     0%,
     100% {
@@ -1056,11 +1113,12 @@ input:focus{
     from {
         transform: translateY(0);
     }
-   to {
-       transform: translateY(-3px);
-   }
+    to {
+        transform: translateY(-3px);
+    }
 
 }
+
 @keyframes down {
     from {
         transform: translateY(-3px);
@@ -1077,7 +1135,8 @@ input:focus{
     right: 0;
     bottom: 0;
 }
-.overlay main{
+
+.overlay main {
     filter: blur(15px);
 }
 
@@ -1099,6 +1158,7 @@ input:focus{
     border-right-color: #57bc75;
     animation: l15 1s infinite linear;
 }
+
 .loader::before,
 .loader::after {
     content: "";
@@ -1108,10 +1168,14 @@ input:focus{
     border-radius: 50%;
     animation: l15 2s infinite;
 }
+
 .loader::after {
     margin: 8px;
     animation-duration: 3s;
 }
-@keyframes l15{
-    100%{transform: rotate(1turn)}
+
+@keyframes l15 {
+    100% {
+        transform: rotate(1turn)
+    }
 }

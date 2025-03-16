@@ -121,7 +121,7 @@ footer{
     line-height: 16px;
     text-align: center;
     color: #FFFFFF;
-    margin-top: 29px;
+    margin-top: 5px;
     cursor: pointer;
 }
 
@@ -133,7 +133,7 @@ footer{
     line-height: 16px;
     gap: 7px;
     color: #3D3D3D;
-    margin-top: 26px;
+    margin-top: 16px;
 }
 
 .form_end::before,
@@ -190,6 +190,139 @@ footer{
     font-size: 18px;
     font-weight: 250;
     line-height: 16px;
+}
+
+.checkbox{
+    display: flex;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    justify-content: left;
+    gap: 15px;
+}
+
+ .checkbox input[type="checkbox"] {
+     display: none;
+     visibility: hidden;
+ }
+
+.checkbox label {
+    display: inline-block;
+}
+
+.checkbox .check {
+    cursor: pointer;
+    position: relative;
+    width: 18px;
+    height: 18px;
+    -webkit-tap-highlight-color: transparent;
+    transform: translate3d(0, 0, 0);
+}
+.checkbox .check:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(34,50,84,0.03);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.checkbox .check svg {
+    position: relative;
+    z-index: 1;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #c8ccd4;
+    stroke-width: 1.5;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
+}
+.checkbox .check svg path {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 0;
+}
+.checkbox .check svg polyline {
+    stroke-dasharray: 22;
+    stroke-dashoffset: 66;
+}
+.checkbox .check:hover:before {
+    opacity: 1;
+}
+.checkbox .check:hover svg {
+    stroke: #379e52;
+}
+.checkbox input[type="checkbox"]:checked + .check svg {
+    stroke: #379e52;
+}
+.checkbox input[type="checkbox"]:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+.checkbox input[type="checkbox"]:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+.choose-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+ .radio {
+     display: flex;
+     align-items: center;
+ }
+
+.radio input {
+    -webkit-appearance: none; /* remove default */
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    cursor: pointer;
+    vertical-align: middle;
+    box-shadow: hsl(136, 48%, 42%) 0 1px 1px, inset hsl(136, 48%, 42%) 0 0 0 1px;
+    background-color: hsl(0, 0%, 100%);
+    background-image: -webkit-radial-gradient( hsl(140, 48%, 56%) 0%, hsl(136, 48%, 42%) 15%, hsla(131, 46%, 23%, 0.3) 28%, hsla(131, 81%, 67%, 0.3) 70% );
+    background-repeat: no-repeat;
+    -webkit-transition: background-position .15s cubic-bezier(.8, 0, 1, 1),
+    -webkit-transform .25s cubic-bezier(.8, 0, 1, 1);
+    outline: none;
+}
+.radio input:checked {
+    -webkit-transition: background-position .2s .15s cubic-bezier(0, 0, .2, 1),
+    -webkit-transform .25s cubic-bezier(0, 0, .2, 1);
+}
+.radio-wrapper-32 input:active {
+    -webkit-transform: scale(1.5);
+    -webkit-transition: -webkit-transform .1s cubic-bezier(0, 0, .2, 1);
+}
+
+.radio input,
+.radio input:active {
+    background-position: 0 24px;
+}
+.radio input:checked {
+    background-position: 0 0;
+}
+.radio input:checked ~ input,
+.radio input:checked ~ input:active {
+    background-position: 0 -24px;
+}
+
+.radio{
+    display: flex;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    justify-content: left;
+    gap: 15px;
 }
 
 @keyframes up {
