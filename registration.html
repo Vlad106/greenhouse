@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="./fonts.css">
     <title>Form</title>
 </head>
-<body>
+<body class="overlay">
+<div class="loader"></div>
 <div class="container">
     <button class="close_item">&times;</button>
     <div class="buttons">
@@ -100,6 +101,17 @@
                 toggle.innerHTML = '<svg width="18" height="16"><use href="./sprite.svg#hide"></use></svg>';
             }
         });
+    });
+</script>
+<script>
+    window.addEventListener('load', function () {
+        const loader = document.querySelector('.loader');
+        const main = document.querySelector('.main');
+        setTimeout(() => {
+            document.body.classList.remove('overlay');
+            loader.style.display = 'none';
+            main.style.display = 'block';
+        }, 1000);
     });
 </script>
 </body>
