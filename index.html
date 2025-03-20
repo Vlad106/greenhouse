@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width">
+          content="width=device-width, user-scale=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./all.css">
@@ -26,6 +26,22 @@
                     <use href="./sprite.svg#main-logo"></use>
                 </svg>
             </a>
+            <div class="burger">
+                <input type="checkbox" id="menyAvPaa">
+                <label id="burger" for="menyAvPaa">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </label>
+                <nav id="meny">
+                    <ul>
+                        <li><a class="name-list" href="#">Home</a></li>
+                        <li><a class="name-list" href="#">Shop</a></li>
+                        <li><a class="name-list" href="#">Plant Care</a></li>
+                        <li><a class="name-list" href="#">Blogs</a></li>
+                    </ul>
+                </nav>
+            </div>
             <nav class="navigation">
                 <ul class="menu">
                     <li><a class="name-list" href="#">Home</a></li>
@@ -70,7 +86,7 @@
             </div>
         </div>
     </header>
-    <main class="main">
+    <main class="main-start">
         <div class="text">
             <h2 class="welcome">WELCOME TO GREENSHOP</h2>
             <h1 class="main-item">Let’s Make a
