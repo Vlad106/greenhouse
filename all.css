@@ -211,7 +211,7 @@
     margin-right: -150px;
 }
 
- @media (max-width: 768px) {
+ @media (max-width: 724px) {
      .pic2{
          width: 100%;
          height: auto;
@@ -1469,11 +1469,10 @@ input:focus {
     transform: translateY(-10px) rotate(-45deg);
 }
 
-@media (max-width: 560px) {
-    body{
+body{
         overflow-x: hidden;
     }
-}
+
 
 @keyframes back-rotate {
     from {
