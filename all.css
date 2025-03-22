@@ -211,7 +211,7 @@
     margin-right: -150px;
 }
 
- @media (max-width: 1024px) {
+ @media (max-width: 768px) {
      .pic2{
          width: 100%;
          height: auto;
