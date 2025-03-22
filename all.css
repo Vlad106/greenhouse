@@ -1470,7 +1470,7 @@ input:focus {
 }
 
 @media (max-width: 560px) {
-    .overlay{
+    body{
         overflow-x: hidden;
     }
 }
