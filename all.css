@@ -148,6 +148,12 @@
     margin-right: 24px;
 }
 
+@media (max-width: 1024px) {
+    .menu {
+        gap: 20px;
+    }
+}
+
 .name-list {
     text-decoration: none;
     color: #3D3D3D;
@@ -180,6 +186,12 @@
 
     &:hover {
         filter: brightness(95%);
+    }
+}
+
+@media (max-width: 1024px) {
+    .first-logo{
+        padding-right: 20px;
     }
 }
 
@@ -1175,10 +1187,24 @@ input:focus {
         display: flex;
         height: auto;
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
         gap: 15px 85px;
         flex-wrap: wrap;
         padding: 22px 20px;
         margin: 0;
+        >a:nth-child(3){
+            width: auto;
+            height: auto;
+        }
+        >a:nth-child(2){
+            width: auto;
+            height: auto;
+        }
+        >a:last-child {
+            width: auto;
+            height: auto;
+        }
     }
 }
 
